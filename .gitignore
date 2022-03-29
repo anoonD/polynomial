@@ -5,3 +5,5 @@ compile.sh
 replit.nix
 *.o
 .replit
+.direnv
+.idea
