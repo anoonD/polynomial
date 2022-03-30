@@ -7,7 +7,7 @@ Each Polynomial object is made up of Term objects and signs.
 Usage:
 ```c++
 Term t1(1, Term::expression::x, 2); // x^2
-Term t2(Term(10, Term::expression::num, 12)); // 10
+Term t2(10, Term::expression::num, 12); // 10
 
 Poly poly1(t1);
 p.add(Poly::signs::PLUS, t2); // x^2 + 10
