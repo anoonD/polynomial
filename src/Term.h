@@ -9,6 +9,7 @@ public:
 
     enum expression {
         num = 0,
+        x,
         sin,
         cos,
     };
@@ -27,5 +28,5 @@ private:
     expression m_expr;
     double m_power;
 
-    std::vector<std::string> expression_string = {"", "sin", "cos"}; // Used for printing term
+    std::vector<std::string> expression_string = {"", "x", "sin(x)", "cos(x)"}; // Used for printing term
 };

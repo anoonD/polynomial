@@ -11,6 +11,9 @@ double Term::get_at(double x) {
 
 double Term::evaluate(int x) {
     if(m_expr == expression::num) {
+        return 1;
+    }
+    else if(m_expr == expression::x) {
         return x;
     }
     else if(m_expr == expression::sin) {
@@ -23,6 +26,9 @@ double Term::evaluate(int x) {
 }
 
     std::string Term::to_string() {
-        std::string s = fmt::format("{}{}(x)^{}", m_coef, expression_string[m_expr], m_power);
+        std::string s = fmt::format("{}{}{}",
+                                    m_coef == 1 ? "" : fmt::format("{}", m_coef),
+                                    m_expr == expression::num ? "" : expression_string[m_expr],
+                                    m_expr == num || m_power == 0 ? "" : fmt::format("^{}", m_power));
         return s;
     }
