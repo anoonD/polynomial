@@ -1,6 +1,6 @@
 # Polynomial
 
-Allows you to create polynomials.  Currently only sin and cos functions are added but you can easely add any function you want by editing Term.h & Term.cpp, just make sure that the index of the 
+Allows you to create polynomials.  Currently only sin and cos functions are added, but you can easily add any function you want by editing Term.h & Term.cpp, just make sure that the index of the 
 
 Each Polynomial object is made up of Term objects and signs.
 
