@@ -37,6 +37,4 @@ public:
 
     double get_at(double x); // Evaluates the expression at some value x
     std::string to_string(); // Prints the expression
-
-
 };
