@@ -6,5 +6,5 @@ set(CMAKE_CXX_STANDARD 20)
 set(source_dir src)
 
 find_package(fmt)
-add_executable(main src/main.cpp src/Polynomial.cpp src/Polynomial.h src/Term.cpp src/Term.h)
+add_executable(main src/main.cpp src/Expression.cpp src/Expression.h src/Term.cpp src/Term.h src/Polynomial.cpp src/Polynomial.h)
 target_link_libraries(main fmt::fmt)

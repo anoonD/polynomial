@@ -9,8 +9,8 @@ Usage:
 Term t1(1, Term::expression::x, 2); // x^2
 Term t2(10, Term::expression::num, 12); // 10
 
-Poly poly1(t1);
-p.add(Poly::signs::PLUS, t2); // x^2 + 10
+Expr poly1(t1);
+p.add(Expr::signs::PLUS, t2); // x^2 + 10
 p.get_at(5); // (5)^2 + 10 = 35
 ```
 
